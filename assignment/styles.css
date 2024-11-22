@@ -1,0 +1,119 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Bio Container */
+.bio-container {
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Header */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-img {
+    flex: 1 1 150px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.basic-info {
+    flex: 2 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flag {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Hobbies Section */
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.hobbies li {
+    background: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex: 1 1 calc(33% - 20px);
+    text-align: center;
+}
+
+.hobby-img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* About Section */
+.about p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobbies li {
+        flex: 1 1 100%;
+    }
+}
+
+// Referenced the CSS flexbox layout example from W3Schools
+// URL: https://www.w3schools.com/css/css3_flexbox.asp
