@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Bio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="bio-container">
-        <h1>Kuan Chee's Bio</h1>
+        <header>
+            <h1>Kuan Chee's Bio</h1>
+        </header>
         
         <!-- Profile Section -->
-        <div class="profile-section">
+        <section class="profile-section">
             <img src="profile.jpg" alt="A photo of Kuan Chee" class="profile-img">
             <div class="basic-info">
                 <p><strong>First Name:</strong> Kuan Chee</p>
@@ -19,29 +22,35 @@
                 <p><strong>GitHub:</strong> <a href="https://github.com/krunchontu" target="_blank">https://github.com/krunchontu</a></p>
                 <p><strong>Location:</strong> Singapore <img src="singapore-flag.png" alt="Singapore Flag" class="flag"></p>
             </div>
-        </div>
+        </section>
 
         <!-- Hobbies Section -->
-		<div class="hobbies">
+        <section class="hobbies">
             <h2>Hobbies</h2>
             <ul>
                 <li>
-                    Swimming
-                    <img src="swimming.jpg" alt="Swimming Pool" class="hobby-img">
+                    <div class="hobby-item">
+                        <img src="swimming.jpg" alt="Swimming Pool" class="hobby-img">
+                        <p>Swimming</p>
+                    </div>
                 </li>
                 <li>
-                    Reading
-                    <img src="reading.jpg" alt="A stack of books" class="hobby-img">
+                    <div class="hobby-item">
+                        <img src="reading.jpg" alt="A stack of books" class="hobby-img">
+                        <p>Reading</p>
+                    </div>
                 </li>
                 <li>
-                    Exploring New Technologies
-                    <img src="coding.jpg" alt="Coding on a laptop" class="hobby-img">
+                    <div class="hobby-item">
+                        <img src="coding.jpg" alt="Coding on a laptop" class="hobby-img">
+                        <p>Exploring New Technologies</p>
+                    </div>
                 </li>
             </ul>
-        </div>
+        </section>
 
         <!-- About Section -->
-        <div class="about">
+        <section class="about">
             <h2>About Me</h2>
             <p>
                 Hello! My name is <strong>Kuan Chee</strong>, and I am a passionate software engineer based in the vibrant city-state of <strong>Singapore</strong>.
@@ -54,7 +63,7 @@
                 I’m excited about building intuitive, user-friendly applications that solve real-world problems and bring ideas to life. With a keen eye for detail
                 and a thirst for innovation, I aspire to create impactful digital experiences that resonate with users globally.
             </p>
-        </div>
+        </section>
     </div>
 </body>
 </html>
